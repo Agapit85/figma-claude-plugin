@@ -1,0 +1,7 @@
+{
+  "name": "figma",
+  "description": "Figma → Jetpack Compose UI. Auto-configures via FIGMA.md.",
+  "version": "1.0.0",
+  "author": { "name": "Denis_Gladkih" },
+  "repository": "https://github.com/Agapit85/figma-claude-plugin"
+}
