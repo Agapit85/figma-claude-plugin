@@ -23,14 +23,9 @@ Get token: Figma → Settings → Security → Personal access tokens (`file_rea
 
 ### 2. Install plugin
 
-```bash
-/plugin install https://github.com/Agapit85/figma-claude-plugin
 ```
-
-Local testing:
-
-```bash
-claude --plugin-dir ~/.claude/plugins/figma-claude-plugin
+/plugin marketplace add Agapit85/figma-claude-plugin
+/plugin install figma-claude-plugin@figma-claude-plugin
 ```
 
 ## Usage
