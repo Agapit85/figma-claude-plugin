@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "figma-claude-plugin",
-      "source": "./",
+      "source": "./plugin",
       "description": "Figma → Jetpack Compose UI"
     }
   ]
