@@ -14,12 +14,24 @@ On first run in a new project, automatically analyzes the codebase, asks a few q
 
 ### 1. Figma token
 
-```bash
-echo 'export FIGMA_ACCESS_TOKEN=your_token_here' >> ~/.zshrc
-source ~/.zshrc
+Get token: Figma → Settings → Security → Personal access tokens → scope `File content` (Read only).
+
+Add to `~/.claude/settings.json`:
+
+```json
+{
+  "env": {
+    "FIGMA_ACCESS_TOKEN": "figd_your_token_here"
+  }
+}
 ```
 
-Get token: Figma → Settings → Security → Personal access tokens (`file_read` scope).
+Or via shell (alternative):
+
+```bash
+echo 'export FIGMA_ACCESS_TOKEN=figd_your_token_here' >> ~/.zshrc
+source ~/.zshrc
+```
 
 ### 2. Install plugin
 
