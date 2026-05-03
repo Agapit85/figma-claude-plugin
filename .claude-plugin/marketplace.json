@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "figma-claude-plugin",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "Agapit85/figma-claude-plugin"
+      },
       "description": "Figma → Jetpack Compose UI"
     }
   ]
