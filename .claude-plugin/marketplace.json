@@ -1,0 +1,13 @@
+{
+  "name": "figma-claude-plugin",
+  "owner": {
+    "name": "Agapit85"
+  },
+  "plugins": [
+    {
+      "name": "figma-claude-plugin",
+      "source": ".",
+      "description": "Figma → Jetpack Compose UI"
+    }
+  ]
+}
