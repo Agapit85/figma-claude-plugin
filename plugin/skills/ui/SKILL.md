@@ -11,13 +11,12 @@ description: Implements Compose UI from Figma. On first run, analyzes the projec
 
 ## Mode 2: FIGMA.md not found — project setup
 
-1. Explore the project to understand its structure:
-   - Read all .md files in root and `.claude/` directory
-   - Find theme/design system files (Colors, Typography, Theme)
-   - Find existing UI component directories
-   - Detect platforms: search for `tv/` subdirectories in UI layers, TV-specific components,
-     or TV-related keywords (FocusRequester, leanback, TvLazyColumn).
-     If found → platform includes TV. If not found → Mobile only, skip TV questions.
+1. Run via Bash: `bash "$(dirname "$0")/scan_project.sh"`
+   Parse the compact output — do NOT read file contents yet.
+   Use only paths and TV markers from the scan:
+   - TV detected if "TV directories" or "TV marker files" sections are non-empty ("none" = absent)
+   - Design system files and UI directories give exact paths for later use
+   - MD files list tells you which docs exist (read only if a specific question requires it)
 2. Ask the user clarifying questions (max 3-4), only about what wasn't auto-detected:
    - Confirm detected platforms: "Found TV components — does this project support TV?" (if found)
    - Where are reusable UI components? (if unclear from structure)
